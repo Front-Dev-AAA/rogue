@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 30px;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.field-box {
+  border: 2px solid #13a70c;
+  float: left;
+}
+
+.field {
+  position: relative;
+  width: 1000px;
+  height: 625px;
+}
+
+.field .tile {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+  background-image: url(../images/tile.png);
+  z-index: 5;
+}
+
+.field .tileW {
+  background-image: url(../images/tileW.png);
+}
+
+.field .tileE {
+  background-image: url(../images/tileE.png);
+  z-index: 10;
+}
+
+.field .tileP {
+  background-image: url(../images/tileP.png);
+  z-index: 10;
+}
+
+.field .tileHP {
+  background-image: url(../images/tileHP.png);
+  z-index: 9;
+}
+
+.field .tileSW {
+  background-image: url(../images/tileSW.png);
+  z-index: 9;
+}
+
+.field .tile .health {
+  background-color: #0011ff;
+  z-index: 11;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  height: 2px;
+}
+
+.field .tileP .health {
+  background-color: #ff4800;
+  z-index: 11;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  height: 2px;
+}
+
+.inventory-box {
+  border: 1px solid #179066;
+  float: left;
+}
+
+.inventory {
+  position: relative;
+  width: 800px;
+  height: 32px;
+}
+
+.cl {
+  clear: both;
+  display: block;
+}
+
+.control {
+  position: absolute;
+  top: 70px;
+  left: 1100px;
+}
+
+.control-subtitle {
+  font-size: 30px;
+}
+
+.loading {
+  position: absolute;
+  left: 270px;
+  top: 70px;
+}
+
+.info {
+  position: absolute;
+  font-size: 30px;
+  left: 20px;
+  top: 80px;
+  z-index: 10;
+  display: flex;
+}
+
+.hp {
+  margin-right: 20px;
+}
